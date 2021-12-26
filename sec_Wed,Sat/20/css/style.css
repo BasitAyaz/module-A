@@ -1,0 +1,64 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ul{
+    background-color: lightblue;
+    padding: 5px;
+    list-style-type: decimal;
+    list-style-position: inside;
+    list-style-image: url('https://picsum.photos/16');
+}
+li{
+    padding: 10px;
+    margin: 5px;
+    background-color: aqua;
+    display: inline-block;
+} */
+
+table{
+    width: 90%;
+    background-color: lightblue;
+    margin: 10px auto;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, .2);
+    padding: 0;
+    /* border-collapse: separate;
+    border-spacing: 5px 10px; */
+
+}
+thead{
+    background-color: rgba(0, 0, 0, .3);
+}
+thead th{
+    padding: 10px;
+    color: white;
+}
+tbody{
+    background-color: rgba(0, 0, 0, .1);
+}
+tbody td{
+    padding: 10px;
+    text-align: center;
+}
+tbody td:hover{
+    background-color: blue;
+    color: white;
+}
+/* tbody tr:nth-child(odd){
+    background-color: blue;
+    color: white;
+} */
+tfoot{
+    background-color: rgba(0, 0, 0, .5);
+}
+tfoot td{
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+

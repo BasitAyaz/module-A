@@ -1,0 +1,45 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    background-color: lightcyan;
+    padding: 10px;
+    list-style: square;
+    /* list-style-image: url('https://picsum.photos/16'); */
+    list-style-position: inside;
+}
+li{
+    padding: 10px;
+    margin: 5px;
+    background-color:lightblue ;
+    /* border: 1px solid blue; */
+    
+}
+
+table{
+    width: 100%;
+    background-color: lightcyan;
+    empty-cells: hide;
+    /* border-collapse: separate; */
+    /* border-spacing: 5px 10px; */
+}
+thead{
+    background-color: darkcyan;
+    color: white;
+}
+th{
+    padding: 10px;
+}
+/* tbody tr:nth-child(even){
+    background-color: rgba(0, 0, 0, .2);
+}     
+tbody tr:nth-child(odd){
+    background-color: lightgreen;
+} */
+tbody td{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .2);
+    text-align: center;
+}
+

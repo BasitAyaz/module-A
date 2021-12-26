@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+/* navbar start  */
+
+#nav .container {
+  width: 90%;
+  margin: auto;
+  border-bottom: 1px solid gray;
+  padding: 15px 0;
+}
+#nav .main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#nav ul {
+  display: flex;
+}
+#nav ul li {
+  padding: 5px 15px;
+}
+#nav .btnSearchCont {
+  display: flex;
+  align-items: center;
+}
+#nav .search {
+  border: 1px solid gray;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+#nav .search i {
+  font-size: 12px;
+}
+#nav .search input {
+  border: none;
+  outline: none;
+}
+#nav .btns .btn {
+}
+#nav .btns .login {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 5px 10px;
+}
+#nav .btns .signup {
+  background: #14a800;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 20px;
+}
+
+/* navbar end  */
+
+/* subnavbar start  */
+#subnavbar {
+  margin-top: 1em;
+}
+#subnavbar .container {
+  width: 90%;
+  margin: auto;
+}
+#subnavbar ul {
+  display: flex;
+}
+#subnavbar ul li {
+  padding: 5px 10px;
+}
+
+/* subnavbar end */
+
+/* header start  */
+#header {
+  margin-top: 4em;
+}
+#header .container {
+  width: 90%;
+  margin: auto;
+}
+#header .main {
+  display: flex;
+}
+#header .firstCont .headings {
+}
+#header .firstCont .headings h1 {
+  font-size: 3.5em;
+  color: #14a800;
+}
+#header .firstCont .peras {
+  margin: 2rem 0;
+}
+#header .firstCont .peras p {
+  font-size: 1.5em;
+  color: gray;
+}
+#header .firstCont .btns {
+  margin: 2rem 0;
+}
+#header .firstCont .btns .talent {
+  background: #14a800;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}
+#header .firstCont .btns .work {
+  color: #14a800;
+  border: 1px solid #14a800;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background: transparent;
+}
+#header .firstCont .clients .images {
+  display: flex;
+}
+#header .firstCont .clients .images img {
+  margin: 0 5px;
+}
+/* header end */
+
+/* clients start  */
+#clients .container {
+  width: 90%;
+  margin: auto;
+}
+#clients .main {
+  background-image: url("https://www.upwork.com/static/assets/Brontes/32dcd6ec/img/find-talent.bf9ad20.jpg");
+  background-position: top center;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+#clients .innerCont {
+  color: white;
+}
+#clients .innerCont .forClients {
+  font-size: 1.5em;
+  margin-bottom: 4.5em;
+}
+#clients .innerCont .headings {
+  font-size: 2.5em;
+}
+#clients .innerCont .peras {
+  margin: 1.5em 0;
+}
+#clients .innerCont .peras p {
+  font-size: 1.2em;
+}
+#clients .innerCont .cards {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+#clients .innerCont .card {
+  background: #14a800;
+  width: 300px;
+  height: 150px;
+  margin: 5px 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#clients .innerCont .card .cardHeading h1 {
+  font-size: 2em;
+}
+
+/* clients end */
+
+/* business start  */
+#business {
+  margin-top: 4rem;
+}
+#business .container {
+  width: 90%;
+  margin: auto;
+}
+#business .main {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+#business .firstCont {
+  position: relative;
+  background: #f5f5f5;
+  padding: 10px 15px;
+  width: 50%;
+  border-radius: 10px;
+}
+
+#business .main .firstCont .headings {
+  margin-bottom: 2em;
+}
+#business .main .firstCont .headings h1 {
+  font-size: 3.5em;
+}
+#business .main .firstCont .cards {
+}
+#business .main .firstCont .cards .card {
+  display: flex;
+  margin-bottom: 2em;
+}
+#business .main .firstCont .cards .card .icons {
+  margin-right: 10px;
+  margin-top: 7px;
+  background: black;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#business .main .firstCont .cards .card .icons i {
+  font-size: 12px;
+}
+#business .main .firstCont .cards .card .peras h1 {
+  font-size: 2.3em;
+}
+#business .main .firstCont .cards .card .peras p {
+}
+#business .main .firstCont .absolute {
+  position: absolute;
+  width: 300px;
+  top: -4em;
+  right: -7em;
+}
+#business .secondCont {
+  background: #14a800;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px 15px;
+  border-radius: 10px;
+}
+#business .secondCont .headings {
+  margin-bottom: 2rem;
+}
+#business .secondCont .headings h1 {
+  font-size: 2em;
+}
+#business .secondCont .cards {
+  /* font-size: 2em; */
+}
+#business .secondCont .card {
+  display: flex;
+  margin-bottom: 1em;
+}
+#business .secondCont .card .icons {
+  margin-top: 7px;
+  margin-right: 10px;
+}
+#business .secondCont .card h1 {
+  font-size: 1.5em !important;
+}
+#business .secondCont .card .innerPera {
+  font-size: 1.1em !important;
+}
+
+/* business end */

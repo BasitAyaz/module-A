@@ -1,0 +1,13 @@
+body{
+    background-color: #389adc ;
+}
+.main{
+    width: 350px;
+    background-color: white;
+    padding: 40PX;
+    margin: 10% auto;
+    border-radius: 5px;      
+}
+.low{
+    padding: 20px;
+}

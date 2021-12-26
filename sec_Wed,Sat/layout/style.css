@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.parent {
+  height: 100vh;
+  background-color: lightgray;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  /* justify-content: start; */
+  /* justify-content: end; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+  /* align-items: center; */
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.parent div {
+  background-color: cornflowerblue;
+  width: 300px;
+  height: 300px;
+}

@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.card {
+  width: 300px;
+}
+/* div.img {
+  width: 100%;
+} */
+div.img img {
+  width: 100%;
+}
+.text {
+  background-color: yellow;
+  color: white;
+  padding: 10px 20px;
+}
