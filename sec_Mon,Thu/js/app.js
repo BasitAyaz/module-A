@@ -315,8 +315,149 @@ var dt = new Date();
 
 // console.log(a.nextSibling);
 
-var b = document.childNodes[1].childNodes[2]
+// var b = document.childNodes[1].childNodes[2]
 
-console.log(b.childNodes[1].nodeName)
+// console.log(b.childNodes[1].nodeName)
 
+// var student = {
+//   name: "Muhammad Ali",
+//   fatherName: "Ahmed",
+//   age: 16,
+//   contact: "0307456146",
+//   hobbies: ["a", "b", "c"],
+//   address: {
+//     country: "Pakistan",
+//     city: "Karachi",
+//     area: "Husainabad",
+//   },
+//   isClearedInAllSubjects: true,
+//   func: function () {
+//     console.log("Function play");
+//   },
+// };
 
+// //edit
+// student.fatherName = "Abdul Rahman";
+
+// //add
+// student.institute = "SAIMS";
+
+// //delete
+// delete student.age;
+
+// //check
+// var a = "contact" in student;
+
+// var b = [];
+
+// console.log(typeof b);
+
+// var student1 = {
+//   name: "Muhammad Ali",
+//   fatherName: "Ahmed",
+//   age: 16,
+//   contact: "0307456146",
+//   isClearedInAllSubjects: true,
+// };
+// var student2 = {
+//   name: "Muhammad Ali",
+//   fatherName: "Ahmed",
+//   age: 16,
+//   contact: "0307456146",
+//   isClearedInAllSubjects: false,
+// };
+// var student3 = {
+//   name: "Muhammad Ali",
+//   fatherName: "Ahmed",
+//   age: 16,
+//   contact: "0307456146",
+//   isClearedInAllSubjects: true,
+// };
+// var student4 = {
+//   name: "Muhammad Ali",
+//   fatherName: "Ahmed",
+//   age: 16,
+//   contact: "0307456146",
+//   isClearedInAllSubjects: false,
+// };
+
+// var studentList = [student1, student2, student3, student4];
+
+// // for roll number
+// for (var i = 0; i < studentList.length; i++) {
+//   studentList[i].rollNumber = i + 1;
+// }
+// console.log(studentList);
+
+// // for showing the Data
+// var studentData = document.getElementById("studentData");
+// for (var i = 0; i < studentList.length; i++) {
+//   var obj = studentList[i];
+
+//   studentData.innerHTML +=
+//     "<tr><td>" +
+//     obj.rollNumber +
+//     "</td><td>" +
+//     obj.name +
+//     "</td><td>" +
+//     obj.fatherName +
+//     "</td><td>" +
+//     obj.contact +
+//     "</td><td>" +
+//     obj.isClearedInAllSubjects +
+//     "</td></tr>";
+// }
+
+// function searchStd() {
+//   var inpVal = document.getElementById("inpVal");
+//   var showRollNumber = document.getElementById("showRollNumber");
+//   var showName = document.getElementById("showName");
+//   var showFatherName = document.getElementById("showFatherName");
+//   var showContact = document.getElementById("showContact");
+//   var showResult = document.getElementById("showResult");
+
+//   for (var i = 0; i < studentList.length; i++) {
+//     var std = studentList[i];
+//     if (inpVal.value == std.rollNumber) {
+//       console.log(std);
+//       showRollNumber.innerHTML = std.rollNumber;
+//       showName.innerHTML = std.name;
+//       showFatherName.innerHTML = std.fatherName;
+//       showContact.innerHTML = std.contact;
+//       showResult.innerHTML = std.isClearedInAllSubjects;
+//     }
+//   }
+// }
+
+var a = [];
+
+// var std = {
+//   name: "Ali",
+//   age: 15,
+// };
+
+// function createStd(name, age) {
+//   var std = {
+//     name: name,
+//     age: age,
+//   };
+
+//   a.push(std);
+//   console.log(a);
+// }
+
+function CreateStudentObj(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+CreateStudentObj.prototype.inst = "SAIMS";
+
+function createStudent() {
+  var stdName = document.getElementById("name").value;
+  var stdAge = document.getElementById("age").value;
+  var abc = new CreateStudentObj(stdName, stdAge);
+  a.push(abc);
+  console.log(abc.inst);
+  // console.log(a);
+}

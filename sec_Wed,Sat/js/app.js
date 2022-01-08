@@ -360,28 +360,106 @@ var arr = ["letter 1", "letter 2", "letter 3"];
 //   console.log(element.parentNode)
 // }
 
-
 // var a = document.getElementById('pro2')
 // // console.log(a.parentNode)
 // // console.log(a.previousSibling)
 // console.log(a.nextSibling)
 
+// console.log(document.childNodes[1].childNodes[2].childNodes[3].nodeName)
 
-console.log(document.childNodes[1].childNodes[2].childNodes[3].nodeName)
+// function createElementNode(){
+//   var parent = document.getElementById('box')
+//   var inp = document.getElementById('inp')
+//   // var
+//   parent.innerHTML += '<p>'+inp.value+'<button onclick="del(this)">Delete</button>'+'</p>'
+//   inp.value = ''
+// }
 
-function createElementNode(){
-  var parent = document.getElementById('box')
-  var inp = document.getElementById('inp')
-  // var 
-  parent.innerHTML += '<p>'+inp.value+'<button onclick="del(this)">Delete</button>'+'</p>'
-  inp.value = ''
+// function del(element){
+//   console.log(element.parentNode)
+//   element.parentNode.remove()
+// }
+
+// var table = document.getElementById("studentDate");
+// var rollNumberInput = document.getElementById("rollNumberInput");
+// var showRollNumber = document.getElementById("showRollNumber");
+// var showName = document.getElementById("showName");
+// var showFatherName = document.getElementById("showFatherName");
+// var showResult = document.getElementById("showResult");
+
+// var student = [
+//   {
+//     name: "Ali",
+//     fatherName: "Abdullah",
+//     rollNumber: 1,
+//     isClearedInAllSubjects: true,
+//   },
+//   {
+//     name: "Haris",
+//     fatherName: "Abdullah",
+//     rollNumber: 2,
+//     isClearedInAllSubjects: false,
+//   },
+//   {
+//     name: "Zaid",
+//     fatherName: "Abdullah",
+//     rollNumber: 3,
+//     isClearedInAllSubjects: true,
+//   },
+//   {
+//     name: "Sajid",
+//     fatherName: "Abdullah",
+//     rollNumber: 4,
+//     isClearedInAllSubjects: false,
+//   },
+//   {
+//     name: "Majid",
+//     fatherName: "Abdullah",
+//     rollNumber: 5,
+//     isClearedInAllSubjects: true,
+//   },
+// ];
+
+// for (var i = 0; i < student.length; i++) {
+//   table.innerHTML +=
+//     "<tr><td>" +
+//     student[i].rollNumber +
+//     "</td><td>" +
+//     student[i].name +
+//     "</td><td>" +
+//     student[i].fatherName +
+//     "</td><td>" +
+//     student[i].isClearedInAllSubjects +
+//     "</td></tr>";
+// }
+
+// function searchResult() {
+//   var userRollNumber = rollNumberInput.value;
+//   for (var i = 0; i < student.length; i++) {
+//     if (userRollNumber == student[i].rollNumber) {
+//       var obj = student[i];
+//       console.log(obj);
+//       showRollNumber.innerHTML = obj.rollNumber;
+//       showName.innerHTML = obj.name;
+//       showFatherName.innerHTML = obj.fatherName;
+//       showResult.innerHTML = obj.isClearedInAllSubjects;
+//     }
+//   }
+// }
+
+var arr = [];
+
+function CreateStudent(name, age) {
+  this.name = name;
+  this.age = age;
 }
 
-function del(element){
-  console.log(element.parentNode)
-  element.parentNode.remove()
+CreateStudent.prototype.inst = "SAIMS";
+
+function createStdOb(name, age) {
+  var student1 = new CreateStudent(name, age);
+  arr.push(student1);
+  console.log(student1.inst);
+
+  console.log(arr);
 }
-
-
-
-
