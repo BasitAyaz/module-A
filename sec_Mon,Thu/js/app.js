@@ -446,18 +446,37 @@ var a = [];
 //   console.log(a);
 // }
 
-function CreateStudentObj(name, age) {
-  this.name = name;
-  this.age = age;
-}
+// function CreateStudentObj(name, age) {
+//   this.name = name;
+//   this.age = age;
+// }
 
-CreateStudentObj.prototype.inst = "SAIMS";
+// CreateStudentObj.prototype.inst = "SAIMS";
 
-function createStudent() {
-  var stdName = document.getElementById("name").value;
-  var stdAge = document.getElementById("age").value;
-  var abc = new CreateStudentObj(stdName, stdAge);
-  a.push(abc);
-  console.log(abc.inst);
-  // console.log(a);
+// function createStudent() {
+//   var stdName = document.getElementById("name").value;
+//   var stdAge = document.getElementById("age").value;
+//   var abc = new CreateStudentObj(stdName, stdAge);
+//   a.push(abc);
+//   console.log(abc.inst);
+//   // console.log(a);
+// }
+
+// window.location.href; // URL
+// window.location.hostname; // host Name
+// window.location.pathname; //define current pathname
+// window.location.assign(""); // assign new URL
+// window.location.replace(""); // replace URL
+// window.location.reload(); // reload browser
+// window.location.reload(false); // reload browser
+// window.location.reload(true); // reload server
+// history.back(); // move back screen
+// history.forward(); // move forward screen
+// history.go(1); //move 1 page forward
+// history.go(-1); //move 1 page backward
+// history.go(-2); //move 2 page backward
+// document.referrer; //reference
+
+function open() {
+  var a = window.open("https:www.facebook.com");
 }

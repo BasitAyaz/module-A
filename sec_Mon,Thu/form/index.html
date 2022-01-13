@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <form onsubmit="checkValue(event)">
+      <div>
+        <input
+          onfocus="HintShow('nameHint')"
+          onblur="HintHide('nameHint')"
+          required
+          type="text"
+          placeholder="Name"
+          name=""
+          id="name"
+        />
+        <p id="nameHint" style="font-size: 0.5em; display: none">
+          Name should be more than 3 characters
+        </p>
+      </div>
+      <div>
+        <input
+          type=""
+          onfocus="HintShow('emailHint')"
+          onblur="HintHide('emailHint')"
+          placeholder="email"
+          name=""
+          id="email"
+        />
+        <p id="emailHint" style="font-size: 0.5em; display: none">
+          email must contain @ and .
+        </p>
+      </div>
+      <div>
+        <select name="" id="dropdown">
+          <option value="">select category</option>
+          <option value="A">Category A</option>
+          <option value="B">Category B</option>
+          <option value="C">Category C</option>
+        </select>
+      </div>
+      <div>
+        <p><input type="radio" name="gender" value="male" id="" /> Male</p>
+        <p><input type="radio" name="gender" value="female" id="" /> Female</p>
+      </div>
+      <div>
+        <input type="submit" value="submit" />
+      </div>
+    </form>
+    <script src="app.js"></script>
+  </body>
+</html>

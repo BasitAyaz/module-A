@@ -447,19 +447,36 @@ var arr = ["letter 1", "letter 2", "letter 3"];
 //   }
 // }
 
-var arr = [];
+// var arr = [];
 
-function CreateStudent(name, age) {
-  this.name = name;
-  this.age = age;
-}
+// function CreateStudent(name, age) {
+//   this.name = name;
+//   this.age = age;
+// }
 
-CreateStudent.prototype.inst = "SAIMS";
+// CreateStudent.prototype.inst = "SAIMS";
 
-function createStdOb(name, age) {
-  var student1 = new CreateStudent(name, age);
-  arr.push(student1);
-  console.log(student1.inst);
+// function createStdOb(name, age) {
+//   var student1 = new CreateStudent(name, age);
+//   arr.push(student1);
+//   console.log(student1.inst);
 
-  console.log(arr);
-}
+//   console.log(arr);
+// }
+
+// window.location.href // url
+// window.location.hostname // host name
+// window.location.pathname // current path
+// window.location.hash //hash
+// window.location.assign('') // move to url
+// window.location.replace('') // replace current url by new Url
+// window.location.reload() // browser reload
+// window.location.reload(false) //browser reload
+// window.location.reload(true) //server reload
+// history.back()
+// history.forward()
+// hostory.go()
+window.open();
+window.open("url");
+window.open("url", "win1");
+window.open("url", "win1", "width=250,height=250");
