@@ -13,43 +13,48 @@
       crossorigin="anonymous"
     />
 
-    <title>Sign Up</title>
+    <title>Dashboard</title>
   </head>
   <body>
-    <div
-      style="height: 100vh"
-      class="d-flex justify-content-center align-items-center"
-    >
-      <div class="w-50 p-3 bg-white rounded shadow">
-        <div class="p-2">
-          <h2 class="display-6 text-center my-2">Sign Up</h2>
-        </div>
+    <div>
+      <div class="p-3 bg-white rounded shadow">
+        <h1>Dasboard</h1>
+      </div>
+      <div class="p-3">
         <div class="p-2">
           <input
-            id="userName"
-            class="form-control"
+            placeholder="Product Name"
             type="text"
-            placeholder="Name"
-          />
-        </div>
-        <div class="p-2">
-          <input
-            id="email"
+            name=""
+            id="productName"
             class="form-control"
-            type="email"
-            placeholder="Email"
           />
         </div>
         <div class="p-2">
-          <input
-            id="password"
+          <textarea
+            placeholder="Description"
+            type="text"
+            name=""
+            id="desc"
             class="form-control"
-            type="password"
-            placeholder="Password"
-          />
+            rows="10"
+          ></textarea>
         </div>
         <div class="p-2">
-          <button id="signUpBtn" class="btn btn-info w-100">Sign Up</button>
+          <button
+            id="addProductButton"
+            class="btn btn-warning px-5 rounded-pill shadow"
+          >
+            Add Product
+          </button>
+        </div>
+        <div class="p-2">
+          <button
+            id="getDataBtn"
+            class="btn btn-warning px-5 rounded-pill shadow"
+          >
+            Get Date
+          </button>
         </div>
       </div>
     </div>
