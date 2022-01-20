@@ -1,0 +1,17 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Quicksand", sans-serif;
+}
+:root {
+  --light: #e1bc74;
+}
+
+.colorLight {
+  color: var(--light);
+}
+.backgroundLight {
+  background-color: rgb(240, 240, 240);
+}
+.themeLight {
+  background-color: var(--light);
+}
