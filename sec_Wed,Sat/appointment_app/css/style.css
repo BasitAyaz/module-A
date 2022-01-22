@@ -1,0 +1,19 @@
+:root {
+  --primary: #0d3b66;
+  --light: #d7e3fc;
+}
+* {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-family: "Quicksand", sans-serif;
+}
+
+.backgroundPrimary {
+  background-color: var(--primary);
+}
+.backgroundLight {
+  background-color: var(--light);
+}
+.colorPrimary {
+  color: var(--primary);
+}
