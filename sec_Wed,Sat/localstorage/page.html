@@ -7,13 +7,14 @@
     <title>Document</title>
   </head>
   <body>
-    <div>
-      <p>Cart <span></span></p>
-    </div>
-    <button onclick="addToCart()">add to cart</button>
     <button onclick="getData()">Get Data</button>
-    <button onclick="clearData()">Clear Data</button>
-    <button onclick="clearAll()">Clear All</button>
-    <script type="module" src="app.js"></script>
+
+    <script>
+      function getData() {
+        var obj = localStorage.getItem("objNode");
+        obj = JSON.parse(obj);
+        console.log(obj);
+      }
+    </script>
   </body>
 </html>

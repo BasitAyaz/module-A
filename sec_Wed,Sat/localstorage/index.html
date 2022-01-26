@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <button onclick="addDataInLocalStorage()">send</button>
+    </div>
+    <div>
+      <button onclick="getDataInLocalStorage()">get</button>
+    </div>
+    <div>
+      <input type="text" placeholder="Enter Name" name="" id="name" />
+      <button onclick="addObjectArrayInLocalStorage()">
+        send Object & Array
+      </button>
+    </div>
+    <div>
+      <button onclick="getObjectArrayInLocalStorage()">
+        get Object & Array
+      </button>
+    </div>
+    <div>
+      <button onclick="clearLocalStorageData()">clear</button>
+    </div>
+    <div>
+      <button onclick="clearAllLocalStorageData()">clear All</button>
+    </div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

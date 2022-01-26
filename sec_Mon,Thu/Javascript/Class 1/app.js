@@ -1,22 +1,22 @@
-// alert("Abdul Basit");
-// document.write("Hello world");
-// console.log("Hello World");
+window.addToCart = function () {
+  // string
+  //   localStorage.setItem("localData3", "Dummy String Data");
+  //array
 
-var pera = "a hsa s has hdkjash kjash kjd";
+  var arr = ["a", "b", "c"];
+  localStorage.setItem("arrList", JSON.stringify(arr));
+};
+window.getData = function () {
+  // string
+  //   var a = localStorage.getItem("localData1");
 
-var a123 = "asdasd";
-// var a1-23 = 'asdasd' //wrong
-// var a1_23 = 'asdasd' //right
-// var a1$23 = 'asdasd' //
-// var $a123 = 'asdasd' //
-// var a1&23 = 'asdasd' //wrong
-// var a1.23 = 'asdasd' //wrong
-
-// var num1 = 7;
-// var num2 = 4;
-// var val = num1 + num2 - num1 * num2;
-
-var a = "10abc";
-var b = 10;
-
-console.log(a * b);
+  var a = localStorage.getItem("arrList");
+  a = JSON.parse(a);
+  console.log(a);
+};
+function clearData() {
+  localStorage.removeItem("localData1");
+}
+function clearAll() {
+  localStorage.clear();
+}

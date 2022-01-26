@@ -162,7 +162,7 @@ function renderDoctorList(key, filterValue) {
           ${e.days}
         </h4>
         <button
-        onclick="bookAppointment()"
+        onclick="bookAppointment('${e.name}','${e.speciality.label}','${e.hospital}')"
           class="p-2 border-0 rounded-pill px-5 backgroundPrimary text-white"
         >
           Make Appointment
@@ -180,8 +180,15 @@ window.filterDoctor = function () {
 window.filterDoctorbyStarRating = function () {
   renderDoctorList("starRating", appointmentStar.value);
 };
-window.bookAppointment = function (e) {
-  console.log(e);
+window.bookAppointment = function (name, speciality, hospital) {
+  var obj = {
+    name,
+    speciality,
+    hospital,
+  };
+  localStorage.setItem("doctorDetail", JSON.stringify(obj));
+  window.location.assign("./pages/bookappointment/bookappointment.html");
+  console.log(name, speciality, hospital);
 };
 
 renderDoctorList();

@@ -30,6 +30,13 @@ const db = getDatabase();
 
 // ==================== Bookign Code ======================
 
+var dataFromLocalStorage = localStorage.getItem("viewMore");
+var parsedData = JSON.parse(dataFromLocalStorage);
+
+document.getElementById("hotelName").innerHTML = parsedData.name;
+document.getElementById("hotelDesc").innerHTML = parsedData.desc;
+document.getElementById("category").innerHTML = parsedData.category;
+
 var bookBtn = document.getElementById("bookBtn");
 
 bookBtn.addEventListener("click", function () {

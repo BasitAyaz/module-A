@@ -29,6 +29,17 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const db = getDatabase();
 
+// App Work
+
+var dataFromLocalStorage = JSON.parse(localStorage.getItem("doctorDetail"));
+
+document.getElementById("doctorName").innerHTML = dataFromLocalStorage.name;
+document.getElementById("doctorSpeciality").innerHTML =
+  dataFromLocalStorage.speciality;
+document.getElementById("hospital").innerHTML = dataFromLocalStorage.hospital;
+
+console.log(dataFromLocalStorage);
+
 window.bookAppointment = function () {
   var obj = {};
 
