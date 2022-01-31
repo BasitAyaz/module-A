@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="img" onchange="uploadProfile()" type="file" name="" id="" />
+  </body>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
+    import {
+      getStorage,
+      ref,
+      uploadBytesResumable,
+      getDownloadURL,
+    } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-storage.js";
+    const firebaseConfig = {
+      apiKey: "AIzaSyCFPK01XcrMy8j1hO4Gg_S-jWe2SCeE4NE",
+      authDomain: "newchat-622a3.firebaseapp.com",
+      databaseURL: "https://newchat-622a3.firebaseio.com",
+      projectId: "newchat-622a3",
+      storageBucket: "newchat-622a3.appspot.com",
+      messagingSenderId: "65370138070",
+      appId: "1:65370138070:web:1f14d9cdc97e15390cf077",
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const storage = getStorage();
+
+    window.uploadProfile = function () {
+      var a = document.getElementById("img").files;
+      var file = a[0]; // complete image object
+      console.log(file);
+      const storageRef = ref(storage, `images/${file.name}`);
+      const uploadTask = uploadBytesResumable(storageRef, file);
+
+      // ======== it will take 4 perameter on in functions =======
+      uploadTask.on(
+        "state_changed",
+        (snapshot) => {},
+        (error) => {},
+        () => {
+          getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+            // ======== this function will get the download URL and send URL in object =======
+            console.log("File available at", downloadURL);
+          });
+        }
+      );
+    };
+  </script>
+</html>
